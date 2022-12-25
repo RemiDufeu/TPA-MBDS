@@ -15,9 +15,9 @@ Votre client sera satisfait si vous lui proposez un moyen afin :
 
 ## Notre solution
 Pour réaliser notre projet, nous avons décomposé le problème en trois parties :
-- L'import et la mise en forme des données dans notre projet [DATA Extraction](./DATA%20extraction/README.md) où nous détaillons les différentes étapes de l'import des données.
-- L'analyse des données avec R dans le repertoire [Analyse R](./Analyse%20R/README.md) où nous analysons notre ensemble de données en détail.
-- La visualisation des données à l'aide de techniques de visualisation dans le repertoire [Vizualtion](./Vizualisation/README.md).
+- L'import et la mise en forme des données dans notre projet [DATA Extraction](https://github.com/RemiDufeu/TPA-MBDS/tree/main/DATA%20extraction) où nous détaillons les différentes étapes de l'import des données.
+- L'analyse des données avec R dans le repertoire [Analyse R](https://github.com/RemiDufeu/TPA-MBDS/tree/main/Analyse%20R) où nous analysons notre ensemble de données en détail.
+- La visualisation des données à l'aide de techniques de visualisation dans le repertoire [Vizualtion](https://github.com/RemiDufeu/TPA-MBDS/tree/main/Vizualisation).
 
 ## L'architecture de notre projet
 
@@ -29,4 +29,4 @@ Notre projet s'appuye sur la machine vagrant configuré par notre professeur [Se
 
 L'ensemble des données sont accessibles via l'intermédiaire de HIVE à l'aide de table externes.
 
-![Architecture Gloable du projet](./Architecture%20globale.jpg)
+![Architecture Gloable du projet](https://github.com/RemiDufeu/TPA-MBDS/blob/main/Architecture%20Globale.jpg?raw=true)
