@@ -23,7 +23,7 @@ public class Main {
     public static void main(String[] args) {
 
 
-        MongoClientURI connectionString = new MongoClientURI("mongodb://localhost:27017/");
+        MongoClientURI connectionString = new MongoClientURI("mongodb://localhost:27018/");
         MongoClient mongoClient = new MongoClient(connectionString);
 
 
