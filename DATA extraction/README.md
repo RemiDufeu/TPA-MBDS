@@ -143,4 +143,55 @@ TBLPROPERTIES('mongo.uri'='mongodb://localhost:27017/MBDSTPA.Immatriculation');
 ```
 
 ## Hadoop Distributed File System (HDFS)
-TODO
+
+### Import des données
+
+Tout d'abord il faut mettre le fichier CO2.csv dans la machine virtuelle
+Ensuite assurez vous d'avoir lancer hdfs et yarn (si c'est déjà fait vous pouvez sauter cette étape) :
+```bash
+start-dfs.sh
+```
+```bash
+start-yarn.sh
+```
+```bash
+nohup hive --service metastore > /dev/null &
+```
+```bash
+nohup hiveserver2 > /dev/null &
+```
+Mettre le fichier dans HDFS via la commande :
+
+```bash
+hadoop fs -put CO2.csv input
+```
+
+Maintenant que le fichier est dans HDFS, vous pouvez lancer le script python qui va modifier le csv pour le nettoyer :
+
+```bash
+spark-submit co2Reader.py
+```
+
+
+- Maintenant nous accédons à la console HIVE avec la commande : 
+```bash
+beeline -u jdbc:hive2://localhost:10000 vagrant
+```
+```bash
+USE DEFAULT;
+```
+Puis nous allons faire un lien externe vers ce fichier avec HIVE
+Pour être sûr que la table n'existe pas déjà :
+```bash
+drop table CO2_HDFS_H_EXT;
+```
+Maintenant on crée notre table externe :
+```bash
+CREATE EXTERNAL TABLE  CO2_HDFS_H_EXT  (CARID INT, MARQUE STRING,  MALUSBONUS FLOAT, REJET INT, COUTENERGIE FLOAT)
+ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
+STORED AS TEXTFILE LOCATION 'output/TransformationCO2';
+```
+Et voilà maintenant les données devraient être accessible depuis une commande comme celle-ci :
+```bash
+Select * from CO2_HDFS_H_EXT;
+```
