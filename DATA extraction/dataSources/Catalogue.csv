@@ -1,14 +1,14 @@
-marque,nom,puissance,longueur,nbPlaces,nbPortes,couleur,occasion,prix
-Volvo,S80 T6,272,très longue,5,5,blanc,false,50500
-Volvo,S80 T6,272,très longue,5,5,noir,false,50500
-Volvo,S80 T6,272,très longue,5,5,rouge,false,50500
-Volvo,S80 T6,272,très longue,5,5,gris,true,35350
-Volvo,S80 T6,272,très longue,5,5,bleu,true,35350
-Volvo,S80 T6,272,très longue,5,5,gris,false,50500
-Volvo,S80 T6,272,très longue,5,5,bleu,false,50500
-Volvo,S80 T6,272,très longue,5,5,rouge,true,35350
-Volvo,S80 T6,272,très longue,5,5,blanc,true,35350
-Volvo,S80 T6,272,très longue,5,5,noir,true,35350
+Marque,Nom,Puissance,Longueur,NbPlaces,NbPortes,Couleur,Occasion,Prix
+Volvo,S80 T6,272,trï¿½s longue,5,5,blanc,false,50500
+Volvo,S80 T6,272,trï¿½s longue,5,5,noir,false,50500
+Volvo,S80 T6,272,trï¿½s longue,5,5,rouge,false,50500
+Volvo,S80 T6,272,trï¿½s longue,5,5,gris,true,35350
+Volvo,S80 T6,272,trï¿½s longue,5,5,bleu,true,35350
+Volvo,S80 T6,272,trï¿½s longue,5,5,gris,false,50500
+Volvo,S80 T6,272,trï¿½s longue,5,5,bleu,false,50500
+Volvo,S80 T6,272,trï¿½s longue,5,5,rouge,true,35350
+Volvo,S80 T6,272,trï¿½s longue,5,5,blanc,true,35350
+Volvo,S80 T6,272,trï¿½s longue,5,5,noir,true,35350
 Volkswagen,Touran 2.0 FSI,150,longue,7,5,rouge,false,27340
 Volkswagen,Touran 2.0 FSI,150,longue,7,5,gris,true,19138
 Volkswagen,Touran 2.0 FSI,150,longue,7,5,bleu,true,19138
@@ -49,11 +49,11 @@ Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,noir,false,22900
 Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,bleu,false,22900
 Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,rouge,false,22900
 Volkswagen,Golf 2.0 FSI,150,moyenne,5,5,gris,false,22900
-Skoda,Superb 2.8 V6,193,très longue,5,5,rouge,false,31790
-Skoda,Superb 2.8 V6,193,très longue,5,5,gris,false,31790
-Skoda,Superb 2.8 V6,193,très longue,5,5,bleu,false,31790
-Skoda,Superb 2.8 V6,193,très longue,5,5,noir,false,31790
-Skoda,Superb 2.8 V6,193,très longue,5,5,blanc,false,31790
+Skoda,Superb 2.8 V6,193,trï¿½s longue,5,5,rouge,false,31790
+Skoda,Superb 2.8 V6,193,trï¿½s longue,5,5,gris,false,31790
+Skoda,Superb 2.8 V6,193,trï¿½s longue,5,5,bleu,false,31790
+Skoda,Superb 2.8 V6,193,trï¿½s longue,5,5,noir,false,31790
+Skoda,Superb 2.8 V6,193,trï¿½s longue,5,5,blanc,false,31790
 Seat,Toledo 1.6,102,longue,5,5,blanc,false,18880
 Seat,Toledo 1.6,102,longue,5,5,noir,false,18880
 Seat,Toledo 1.6,102,longue,5,5,rouge,false,18880
@@ -69,16 +69,16 @@ Saab,9.3 1.8T,150,longue,5,5,bleu,false,38600
 Saab,9.3 1.8T,150,longue,5,5,noir,false,38600
 Saab,9.3 1.8T,150,longue,5,5,rouge,false,38600
 Saab,9.3 1.8T,150,longue,5,5,blanc,false,38600
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,gris,true,34440
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,noir,true,34440
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,bleu,true,34440
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,rouge,true,34440
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,blanc,true,34440
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,gris,false,49200
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,bleu,false,49200
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,blanc,false,49200
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,noir,false,49200
-Renault,Vel Satis 3.5 V6,245,très longue,5,5,rouge,false,49200
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,gris,true,34440
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,noir,true,34440
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,bleu,true,34440
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,rouge,true,34440
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,blanc,true,34440
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,gris,false,49200
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,bleu,false,49200
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,blanc,false,49200
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,noir,false,49200
+Renault,Vel Satis 3.5 V6,245,trï¿½s longue,5,5,rouge,false,49200
 Renault,Megane 2.0 16V,135,moyenne,5,5,gris,true,15644
 Renault,Megane 2.0 16V,135,moyenne,5,5,bleu,true,15644
 Renault,Megane 2.0 16V,135,moyenne,5,5,rouge,true,15644
@@ -124,11 +124,11 @@ Nissan,Primera 1.6,109,longue,5,5,bleu,false,18650
 Nissan,Primera 1.6,109,longue,5,5,rouge,false,18650
 Nissan,Primera 1.6,109,longue,5,5,gris,false,18650
 Nissan,Primera 1.6,109,longue,5,5,blanc,false,18650
-Nissan,Maxima 3.0 V6,200,très longue,5,5,noir,false,30000
-Nissan,Maxima 3.0 V6,200,très longue,5,5,gris,false,30000
-Nissan,Maxima 3.0 V6,200,très longue,5,5,bleu,false,30000
-Nissan,Maxima 3.0 V6,200,très longue,5,5,rouge,false,30000
-Nissan,Maxima 3.0 V6,200,très longue,5,5,blanc,false,30000
+Nissan,Maxima 3.0 V6,200,trï¿½s longue,5,5,noir,false,30000
+Nissan,Maxima 3.0 V6,200,trï¿½s longue,5,5,gris,false,30000
+Nissan,Maxima 3.0 V6,200,trï¿½s longue,5,5,bleu,false,30000
+Nissan,Maxima 3.0 V6,200,trï¿½s longue,5,5,rouge,false,30000
+Nissan,Maxima 3.0 V6,200,trï¿½s longue,5,5,blanc,false,30000
 Nissan,Almera 1.8,115,moyenne,5,5,gris,false,16450
 Nissan,Almera 1.8,115,moyenne,5,5,bleu,false,16450
 Nissan,Almera 1.8,115,moyenne,5,5,noir,false,16450
@@ -144,16 +144,16 @@ Mini,Copper 1.6 16V,115,courte,5,5,bleu,false,18200
 Mini,Copper 1.6 16V,115,courte,5,5,rouge,false,18200
 Mini,Copper 1.6 16V,115,courte,5,5,noir,false,18200
 Mini,Copper 1.6 16V,115,courte,5,5,blanc,false,18200
-Mercedes,S500,306,très longue,5,5,noir,true,70910
-Mercedes,S500,306,très longue,5,5,bleu,true,70910
-Mercedes,S500,306,très longue,5,5,rouge,true,70910
-Mercedes,S500,306,très longue,5,5,blanc,true,70910
-Mercedes,S500,306,très longue,5,5,bleu,false,101300
-Mercedes,S500,306,très longue,5,5,gris,true,70910
-Mercedes,S500,306,très longue,5,5,noir,false,101300
-Mercedes,S500,306,très longue,5,5,blanc,false,101300
-Mercedes,S500,306,très longue,5,5,rouge,false,101300
-Mercedes,S500,306,très longue,5,5,gris,false,101300
+Mercedes,S500,306,trï¿½s longue,5,5,noir,true,70910
+Mercedes,S500,306,trï¿½s longue,5,5,bleu,true,70910
+Mercedes,S500,306,trï¿½s longue,5,5,rouge,true,70910
+Mercedes,S500,306,trï¿½s longue,5,5,blanc,true,70910
+Mercedes,S500,306,trï¿½s longue,5,5,bleu,false,101300
+Mercedes,S500,306,trï¿½s longue,5,5,gris,true,70910
+Mercedes,S500,306,trï¿½s longue,5,5,noir,false,101300
+Mercedes,S500,306,trï¿½s longue,5,5,blanc,false,101300
+Mercedes,S500,306,trï¿½s longue,5,5,rouge,false,101300
+Mercedes,S500,306,trï¿½s longue,5,5,gris,false,101300
 Mercedes,A200,136,moyenne,5,5,blanc,false,25900
 Mercedes,A200,136,moyenne,5,5,noir,false,25900
 Mercedes,A200,136,moyenne,5,5,blanc,true,18130
@@ -189,11 +189,11 @@ Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,true,25970
 Jaguar,X-Type 2.5 V6,197,longue,5,5,noir,false,37100
 Jaguar,X-Type 2.5 V6,197,longue,5,5,blanc,false,37100
 Jaguar,X-Type 2.5 V6,197,longue,5,5,bleu,false,37100
-Hyundaï,Matrix 1.6,103,longue,7,5,bleu,false,15960
-Hyundaï,Matrix 1.6,103,longue,7,5,blanc,false,15960
-Hyundaï,Matrix 1.6,103,longue,7,5,gris,false,15960
-Hyundaï,Matrix 1.6,103,longue,7,5,noir,false,15960
-Hyundaï,Matrix 1.6,103,longue,7,5,rouge,false,15960
+Hyundaï¿½,Matrix 1.6,103,longue,7,5,bleu,false,15960
+Hyundaï¿½,Matrix 1.6,103,longue,7,5,blanc,false,15960
+Hyundaï¿½,Matrix 1.6,103,longue,7,5,gris,false,15960
+Hyundaï¿½,Matrix 1.6,103,longue,7,5,noir,false,15960
+Hyundaï¿½,Matrix 1.6,103,longue,7,5,rouge,false,15960
 Honda,FR-V 1.7,125,longue,7,5,noir,false,19550
 Honda,FR-V 1.7,125,longue,7,5,bleu,false,19550
 Honda,FR-V 1.7,125,longue,7,5,gris,false,19550
@@ -229,16 +229,16 @@ Dacia,Logan 1.6 MPI,90,moyenne,5,5,rouge,false,7500
 Dacia,Logan 1.6 MPI,90,moyenne,5,5,noir,false,7500
 Dacia,Logan 1.6 MPI,90,moyenne,5,5,gris,false,7500
 Dacia,Logan 1.6 MPI,90,moyenne,5,5,bleu,false,7500
-BMW,M5,507,très longue,5,5,bleu,true,66360
-BMW,M5,507,très longue,5,5,gris,false,94800
-BMW,M5,507,très longue,5,5,blanc,false,94800
-BMW,M5,507,très longue,5,5,noir,false,94800
-BMW,M5,507,très longue,5,5,rouge,true,66360
-BMW,M5,507,très longue,5,5,blanc,true,66360
-BMW,M5,507,très longue,5,5,bleu,false,94800
-BMW,M5,507,très longue,5,5,gris,true,66360
-BMW,M5,507,très longue,5,5,rouge,false,94800
-BMW,M5,507,très longue,5,5,noir,true,66360
+BMW,M5,507,trï¿½s longue,5,5,bleu,true,66360
+BMW,M5,507,trï¿½s longue,5,5,gris,false,94800
+BMW,M5,507,trï¿½s longue,5,5,blanc,false,94800
+BMW,M5,507,trï¿½s longue,5,5,noir,false,94800
+BMW,M5,507,trï¿½s longue,5,5,rouge,true,66360
+BMW,M5,507,trï¿½s longue,5,5,blanc,true,66360
+BMW,M5,507,trï¿½s longue,5,5,bleu,false,94800
+BMW,M5,507,trï¿½s longue,5,5,gris,true,66360
+BMW,M5,507,trï¿½s longue,5,5,rouge,false,94800
+BMW,M5,507,trï¿½s longue,5,5,noir,true,66360
 BMW,120i,150,moyenne,5,5,rouge,true,25060
 BMW,120i,150,moyenne,5,5,bleu,false,35800
 BMW,120i,150,moyenne,5,5,blanc,false,35800
