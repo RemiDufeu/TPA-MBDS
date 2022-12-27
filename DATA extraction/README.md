@@ -93,20 +93,69 @@ TBLPROPERTIES (
 
 Pour notre projet nous avons décidé de placer les données de Catalogue et d'Immatriculations dans le serveur Mongo DB.
 
-Pour réaliser l'import des données il est possible d'utiliser l'utilitaire mongoimport. Nous avons aussi développé un projet MAVEN qui permet de réaliser l'import des données. Ce projet est disponible dans le dossier "programmesExtraction/MONGODB/". Pour l'utiliser il faut configurer la machine vituelle sur virtualbox et rediriger le port 27018 de la machine hôte vers le port 27017 de la machine virtuelle. Il faut aussi modifier les chemins des fichiers d'extractions dans la classe Main.
+Pour réaliser l'import des données on va utiliser l'utilitaire mongoimport.
+
+On lance MongoDB : 
+
+```bash
+sudo systemctl start mongod
+```
+
+On se connecte ensuite au MongoDB Client
+
+```bash
+mongo
+```
+
+On execute la serie des commandes suivante :
+
+```bash
+// Créer la BDD TPA
+use TPA
+// Créer les deux collections "Immatriculation" "Catalogue" :
+db.createCollection("Immatriculation")
+db.createCollection("Catalogue")
+// Verifier les collections
+show collections
+//On quitte le mongo shell
+quit()
+```
+Ensuite dans le bash du vagrant on lance la commande :
+
+```bash
+//On accede au repertoire ou se trouve nos CSV, dans notre cas, les fichiers sont dans le dossier partagé de Vagrant :
+cd /vagrant
+```
+
+Ensuite, on lance la commande pour importer les données pour Catalogue :
+
+```bash
+mongoimports -d TPA -c Catalogue --type=csv --file={url}/{to}/{file}/Catalogue.csv  --headerline
+```
+
+De meme pour Immatriculation : 
+
+```bash
+mongoimports -d TPA -c Immatriculation --type=csv --file={url}/{to}/{file}/Immatriculation.csv  --headerline
+```
+
+On peut verifier que les donnees on ete bien importees :
+
+```bash
+mongo
+use TPA
+db.Catalogue.find({})
+db.Immatriculation.find({})
+```
 
 ### Création des tables externes sur HIVE
 
 Pour démarrer et accéder à la console HIVE il faut suivre les mêmes instructions que pour la source Oracle NOSQL.
 
-```bash
-USE DEFAULT;
-```
-
 - script de création de la table Catalogue
 
 ```bash
-CREATE EXTERNAL TABLE catalogue_ext ( 
+CREATE EXTERNAL TABLE catalogue_h_ext ( 
 id STRING, 
 Marque STRING,
 Nom STRING,
@@ -115,17 +164,17 @@ Longueur STRING,
 NbPlaces INT,
 NbPortes INT,
 Couleur STRING,
-Occasion BOOLEAN,
+Occasion STRING,
 Prix DOUBLE )
 STORED BY 'com.mongodb.hadoop.hive.MongoStorageHandler'
 WITH SERDEPROPERTIES('mongo.columns.mapping'='{"id":"_id", "Marque":"Marque", "Nom" : "Nom", "Puissance": "Puissance", "Longueur" : "Longueur", "NbPlaces" : "NbPlaces", "NbPortes" : "NbPortes", "Couleur" : "Couleur", "Occasion" : "Occasion", "Prix" : "Prix"}')
-TBLPROPERTIES('mongo.uri'='mongodb://localhost:27017/MBDSTPA.Catalogue');
+TBLPROPERTIES('mongo.uri'='mongodb://localhost:27017/TPA.Catalogue');
 ```
 
 - script de création de la table Immatriculation
 
 ```bash
-CREATE EXTERNAL TABLE immatriculation_ext ( 
+CREATE EXTERNAL TABLE immatriculation_h_ext ( 
 id STRING,
 Immatriculation STRING, 
 Marque STRING,
@@ -135,11 +184,11 @@ Longueur STRING,
 NbPlaces INT,
 NbPortes INT,
 Couleur STRING,
-Occasion BOOLEAN,
+Occasion STRING,
 Prix DOUBLE )
 STORED BY 'com.mongodb.hadoop.hive.MongoStorageHandler'
 WITH SERDEPROPERTIES('mongo.columns.mapping'='{"id":"_id", "Immatriculation":"Immatriculation", "Marque":"Marque", "Nom" : "Nom", "Puissance": "Puissance", "Longueur" : "Longueur", "NbPlaces" : "NbPlaces", "NbPortes" : "NbPortes", "Couleur" : "Couleur", "Occasion" : "Occasion", "Prix" : "Prix"}')
-TBLPROPERTIES('mongo.uri'='mongodb://localhost:27017/MBDSTPA.Immatriculation');
+TBLPROPERTIES('mongo.uri'='mongodb://localhost:27017/TPA.Immatriculation');
 ```
 
 ## Hadoop Distributed File System (HDFS)
