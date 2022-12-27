@@ -37,7 +37,7 @@ Executer les lignes de commandes suivantes :
 ```r
 install.packages('RJDBC')
 library(RJDBC)
-con <- dbConnect(odbc::odbc(), "Hive Driver")
+hiveDB <- dbConnect(odbc::odbc(), "Hive Driver")
 ```
 Apres cette étape, si vous utilisez RStudio vous devez voir la connexion du HIVE comme suit : 
 
@@ -46,7 +46,7 @@ Apres cette étape, si vous utilisez RStudio vous devez voir la connexion du HIV
 Pour tester que tout marche bien on execute une simple requete SQL :
 
 ```r
-dbGetQuery(con,"select * from catalogue_h_ext")
+dbGetQuery(hiveDB,"select * from catalogue_h_ext")
 ```
 
 ![image](https://user-images.githubusercontent.com/91131467/209729343-03073896-6f94-4016-a88e-a701597a0fae.png)
