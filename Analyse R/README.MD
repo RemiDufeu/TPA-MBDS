@@ -4,7 +4,7 @@
 
 ### Windows : 
 
-- Sur ce [lien](https://www.cloudera.com/downloads/connectors/hive/jdbc/2-6-5.html) telecharger le Driver ODBC HIVE pour windows .
+- Sur ce [lien](https://www.cloudera.com/downloads/connectors/hive/odbc/2-6-1.html) telecharger le Driver ODBC HIVE pour windows .
 
 ![image](https://user-images.githubusercontent.com/91131467/209726982-b60298ab-21f0-4853-8758-41b4840d3447.png)
 
