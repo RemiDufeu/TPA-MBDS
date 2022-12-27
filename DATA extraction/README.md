@@ -212,7 +212,7 @@ nohup hiveserver2 > /dev/null &
 Mettre le fichier dans HDFS via la commande :
 
 ```bash
-hadoop fs -put CO2.csv input
+hadoop fs -put CO2.csv input/CO2.csv
 ```
 
 Maintenant que le fichier est dans HDFS, vous pouvez lancer le script python qui va modifier le csv pour le nettoyer :
