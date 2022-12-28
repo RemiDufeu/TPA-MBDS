@@ -82,3 +82,6 @@ summary(marketing)
 str(clients)
 names(clients)
 summary(clients)
+
+# dans notre dataset 'très longue' correspond à 'tr'
+immatriculation$longueur <- with(immatriculation,ifelse(longueur == 'tr',"très longue",longueur))
