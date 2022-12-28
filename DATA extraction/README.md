@@ -130,13 +130,13 @@ cd /vagrant
 Ensuite, on lance la commande pour importer les données pour Catalogue :
 
 ```bash
-mongoimports -d TPA -c Catalogue --type=csv --file={url}/{to}/{file}/Catalogue.csv  --headerline
+mongoimport -d TPA -c Catalogue --type=csv --file={url}/{to}/{file}/Catalogue.csv  --headerline
 ```
 
 De meme pour Immatriculation : 
 
 ```bash
-mongoimports -d TPA -c Immatriculation --type=csv --file={url}/{to}/{file}/Immatriculation.csv  --headerline
+mongoimport -d TPA -c Immatriculation --type=csv --file={url}/{to}/{file}/Immatriculation.csv  --headerline
 ```
 
 On peut verifier que les donnees on ete bien importees :
