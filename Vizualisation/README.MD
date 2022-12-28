@@ -1,5 +1,5 @@
 # Vizualisation
-## instalation
+## installation
 
 Le projet requiert l'instalation de node ainsi que python sur la machine qui heberge le serveur de visualisation.
 Le projet est compatible avec la version 16.14.2 de node et la version 3.11 de python.
