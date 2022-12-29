@@ -1,0 +1,172 @@
+# weights:  903
+initial  value 3359.615263 
+iter  10 value 1537.095881
+iter  20 value 1522.762676
+iter  30 value 1507.037591
+iter  40 value 1084.931548
+iter  50 value 984.295533
+iter  60 value 927.880945
+iter  70 value 891.371607
+iter  80 value 879.149453
+iter  90 value 865.466223
+iter 100 value 860.565718
+final  value 860.565718 
+stopped after 100 iterations
+[1] 0.7266667
+[1] 0.7266667
+# weights:  903
+initial  value 6340.621535 
+iter  10 value 1557.020406
+iter  20 value 1526.639256
+iter  30 value 1506.804597
+iter  40 value 1387.548375
+iter  50 value 1001.685916
+iter  60 value 894.959353
+iter  70 value 876.133119
+iter  80 value 867.667380
+iter  90 value 862.668583
+iter 100 value 854.713111
+final  value 854.713111 
+stopped after 100 iterations
+# weights:  543
+initial  value 1658.134564 
+iter  10 value 1528.326585
+iter  20 value 1519.124934
+iter  30 value 1510.992698
+iter  40 value 1347.971710
+iter  50 value 1131.409853
+iter  60 value 958.626916
+iter  70 value 889.853799
+iter  80 value 871.003061
+iter  90 value 858.092514
+iter 100 value 842.395192
+final  value 842.395192 
+stopped after 100 iterations
+[1] 0.8233333
+# weights:  363
+initial  value 1796.691938 
+iter  10 value 1529.778050
+iter  20 value 1512.230339
+iter  30 value 1359.964647
+iter  40 value 1113.278197
+iter  50 value 943.160524
+iter  60 value 866.973115
+iter  70 value 832.446825
+iter  80 value 775.526609
+iter  90 value 766.051447
+iter 100 value 756.709006
+final  value 756.709006 
+stopped after 100 iterations
+[1] 0.865
+# weights:  183
+initial  value 1637.380434 
+iter  10 value 1523.962502
+iter  20 value 1515.302057
+iter  30 value 1276.603545
+iter  40 value 1263.861592
+iter  50 value 1234.491750
+iter  60 value 1136.126175
+iter  70 value 1019.572243
+iter  80 value 919.074736
+iter  90 value 898.087495
+iter 100 value 849.807485
+final  value 849.807485 
+stopped after 100 iterations
+Error in install.packages : Updating loaded packages
+[1] 0.865
+# weights:  273
+initial  value 1601.492443 
+iter  10 value 1521.653361
+iter  20 value 1508.997887
+iter  30 value 1453.277554
+iter  40 value 1156.827069
+iter  50 value 1098.091394
+iter  60 value 1062.145256
+iter  70 value 1051.778043
+iter  80 value 1012.837903
+iter  90 value 961.905568
+iter 100 value 905.331080
+final  value 905.331080 
+stopped after 100 iterations
+[1] 0.865
+[1] 0.775
+# weights:  453
+initial  value 2645.429167 
+iter  10 value 1529.338041
+iter  20 value 1516.127544
+iter  30 value 1495.019718
+iter  40 value 1323.917292
+iter  50 value 1219.794843
+iter  60 value 1111.488867
+iter  70 value 1035.030120
+iter  80 value 863.993655
+iter  90 value 755.071707
+iter 100 value 749.053365
+final  value 749.053365 
+stopped after 100 iterations
+[1] 0.8633333
+# weights:  363
+initial  value 2481.777766 
+iter  10 value 1528.659871
+iter  20 value 1517.362514
+iter  30 value 1469.578137
+iter  40 value 1307.191913
+iter  50 value 1010.356920
+iter  60 value 942.383334
+iter  70 value 901.374735
+iter  80 value 876.965853
+iter  90 value 857.853216
+iter 100 value 790.256930
+final  value 790.256930 
+stopped after 100 iterations
+[1] 0.8483333
+# weights:  363
+initial  value 2625.480507 
+iter  10 value 1534.195321
+iter  20 value 1529.387509
+iter  30 value 1506.969676
+iter  40 value 1434.556038
+iter  50 value 1051.548531
+iter  60 value 961.066260
+iter  70 value 905.839751
+iter  80 value 893.012226
+iter  90 value 867.354235
+iter 100 value 840.866259
+final  value 840.866259 
+stopped after 100 iterations
+[1] 0.8366667
+# weights:  363
+initial  value 1848.790723 
+iter  10 value 1523.133617
+iter  20 value 1501.675889
+iter  30 value 1294.971666
+iter  40 value 998.533419
+iter  50 value 866.947146
+iter  60 value 834.528757
+iter  70 value 753.872567
+iter  80 value 738.139984
+iter  90 value 727.436240
+iter 100 value 720.940305
+iter 110 value 719.651280
+iter 120 value 716.802196
+iter 130 value 716.084648
+iter 140 value 715.335789
+iter 150 value 713.527781
+iter 160 value 713.076766
+iter 170 value 712.297745
+iter 180 value 710.046854
+iter 190 value 709.522622
+iter 200 value 705.992863
+iter 210 value 699.830333
+iter 220 value 695.895600
+iter 230 value 694.588774
+iter 240 value 694.510763
+iter 250 value 693.825678
+iter 260 value 693.342213
+iter 270 value 691.549090
+iter 280 value 689.255608
+iter 290 value 688.727589
+iter 300 value 688.135559
+final  value 688.135559 
+stopped after 300 iterations
+[1] 0.8566667
