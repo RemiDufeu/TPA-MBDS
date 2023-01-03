@@ -215,6 +215,11 @@ Mettre le fichier dans HDFS via la commande :
 hadoop fs -put CO2.csv input/CO2.csv
 ```
 
+Pour être sûr qu'il n'existe pas de output déjà créer :
+```bash
+hadoop fs -rmr output/*
+```
+
 Maintenant que le fichier est dans HDFS, vous pouvez lancer le script python qui va modifier le csv pour le nettoyer :
 
 ```bash
@@ -236,7 +241,7 @@ drop table CO2_HDFS_H_EXT;
 ```
 Maintenant on crée notre table externe :
 ```bash
-CREATE EXTERNAL TABLE  CO2_HDFS_H_EXT  (CARID INT, MARQUE STRING,  MALUSBONUS FLOAT, REJET INT, COUTENERGIE FLOAT)
+CREATE EXTERNAL TABLE  CO2_HDFS_H_EXT  (MARQUE STRING,  MALUSBONUS FLOAT, REJET FLOAT, COUTENERGIE FLOAT)
 ROW FORMAT DELIMITED FIELDS TERMINATED BY ','
 STORED AS TEXTFILE LOCATION 'output/TransformationCO2';
 ```
