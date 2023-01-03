@@ -44,7 +44,7 @@ plot(tree_rp3)
 text(tree_rp3, pretty = 0)
 
 # Selection d'attribut par Information Gain et effectif minimal d'un noeud de 5
-tree_rp4 <- rpart(Produit~., produit_EA, parms = list(split = "information"), control = rpart.control(minbucket = 5))
+tree_rp4 <- rpart(categorie~., clientCat_EA, parms = list(split = "information"), control = rpart.control(minbucket = 5))
 plot(tree_rp4)
 text(tree_rp4, pretty = 0)
 
@@ -90,19 +90,19 @@ plot(tree_C54, type="simple")
 # TEST DES DES CLASSIFIEURS C5.0() ET CALCUL DES TAUX DE SUCCES #
 #----------------------------------------------------------------#
 
-# Test et taux de succes pour le 1er param�trage pour C5.0()
+# Test et taux de succes pour le 1er paramétrage pour C5.0()
 test_C51 <- predict(tree_C51, clientCat_ET, type="class")
 print(taux_C51 <- nrow(clientCat_ET[clientCat_ET$categorie==test_C51,])/nrow(clientCat_ET))
 
-# Test et taux de succes pour le 2nd param�trage pour C5.0()
+# Test et taux de succes pour le 2nd paramétrage pour C5.0()
 test_C52 <- predict(tree_C52, clientCat_ET, type="class")
 print(taux_C52 <- nrow(clientCat_ET[clientCat_ET$categorie==test_C52,])/nrow(clientCat_ET))
 
-# Test et taux de succes pour le 3eme param�trage pour C5.0()
+# Test et taux de succes pour le 3eme paramétrage pour C5.0()
 test_C53 <- predict(tree_C53, clientCat_ET, type="class")
 print(taux_C53 <- nrow(clientCat_ET[clientCat_ET$categorie==test_C53,])/nrow(clientCat_ET))
 
-# Test et taux de succes pour le 4eme param�trage pour C5.0()
+# Test et taux de succes pour le 4eme paramétrage pour C5.0()
 test_C54 <- predict(tree_C54, clientCat_ET, type="class")
 print(taux_C54 <- nrow(clientCat_ET[clientCat_ET$categorie==test_C54,])/nrow(clientCat_ET))
 

@@ -59,6 +59,29 @@ clients <- dbGetQuery(hiveDB,"select
                   clients_h_ext.immatriculation as immatriculation
                   from clients_h_ext")
 
+# etant donné le volume de donnée import d'immatriculation, j'ai fait le choix d'importer les tâbles jointes avec HIVE :
+#on réalise une fusion entre clients et immatriculations
+clientImmat <- dbGetQuery(hiveDB,"select 
+                  clients_h_ext.clientid as id,
+                  clients_h_ext.age as age,
+                  clients_h_ext.sexe as sexe,
+                  clients_h_ext.taux as taux,
+                  clients_h_ext.situation_familiale as situation_familiale,
+                  clients_h_ext.nbr_enfant as nbr_enfant,
+                  clients_h_ext.voiture_2 as voiture_2,
+                  clients_h_ext.immatriculation as immatriculation,
+                  immatriculation_h_ext.marque as marque,
+                  immatriculation_h_ext.nom as nom,
+                  immatriculation_h_ext.puissance as puissance,
+                  immatriculation_h_ext.longueur as longueur,
+                  immatriculation_h_ext.nbplaces as nbplaces,
+                  immatriculation_h_ext.nbportes as nbportes,
+                  immatriculation_h_ext.couleur as couleur,
+                  immatriculation_h_ext.occasion as occasion,
+                  immatriculation_h_ext.prix as prix
+                  from clients_h_ext inner join immatriculation_h_ext
+                  on clients_h_ext.immatriculation = immatriculation_h_ext.immatriculation")
+
 
 
 
@@ -83,5 +106,19 @@ str(clients)
 names(clients)
 summary(clients)
 
+str(clientImmat)
+names(clientImmat)
+summary(clientImmat)
+
 # dans notre dataset 'très longue' correspond à 'tr'
 immatriculation$longueur <- with(immatriculation,ifelse(longueur == 'tr',"très longue",longueur))
+clientImmat$longueur <- with(clientImmat,ifelse(longueur == 'tr',"très longue",longueur))
+
+# concernant l'age nous avons des anomalies avec des ages negatifs. Pour corriger cette anomalie nous allons remplacer les ages negatifs par la mediane : 41
+clientImmat$age <- with(clientImmat,ifelse(age < 0, 41 ,age))
+clients$age <- with(clients,ifelse(age < 0, 41 ,age))
+
+# de meme pour le taux avec une mediane à 521
+clientImmat$taux <- with(clientImmat,ifelse(taux < 0, 521 ,taux))
+clients$taux <- with(clients,ifelse(taux < 0, 521 ,taux))
+

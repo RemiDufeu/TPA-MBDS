@@ -52,31 +52,6 @@ nrow(subset(immatriculation,categorie == "indefini")) # 0 indéfini
 # on a 0 indéfini donc nos critères couvrent bien léchantillion d'immatriculation
 
 
-# etant donné le volume de donnée import d'immatriculation, j'ai fait le choix d'importer les tâbles jointes avec HIVE :
-#on réalise une fusion entre clients et immatriculations
-clientImmat <- dbGetQuery(hiveDB,"select 
-                  clients_h_ext.clientid as id,
-                  clients_h_ext.age as age,
-                  clients_h_ext.sexe as sexe,
-                  clients_h_ext.taux as taux,
-                  clients_h_ext.situation_familiale as situation_familiale,
-                  clients_h_ext.nbr_enfant as nbr_enfant,
-                  clients_h_ext.voiture_2 as voiture_2,
-                  clients_h_ext.immatriculation as immatriculation,
-                  immatriculation_h_ext.marque as marque,
-                  immatriculation_h_ext.nom as nom,
-                  immatriculation_h_ext.puissance as puissance,
-                  immatriculation_h_ext.longueur as longueur,
-                  immatriculation_h_ext.nbplaces as nbplaces,
-                  immatriculation_h_ext.nbportes as nbportes,
-                  immatriculation_h_ext.couleur as couleur,
-                  immatriculation_h_ext.occasion as occasion,
-                  immatriculation_h_ext.prix as prix
-                  from clients_h_ext inner join immatriculation_h_ext
-                  on clients_h_ext.immatriculation = immatriculation_h_ext.immatriculation")
-
-clientImmat$longueur <- with(clientImmat,ifelse(longueur == 'tr',"très longue",longueur))
-
 clientImmat$categorie <- with(clientImmat,
             ifelse(puissance <=  150 & longueur %in% c("courte","moyenne"), "citadine", 
             ifelse(puissance >  200 & nbportes == 3,"sportive",

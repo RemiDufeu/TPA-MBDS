@@ -170,3 +170,344 @@ iter 300 value 688.135559
 final  value 688.135559 
 stopped after 300 iterations
 [1] 0.8566667
+# weights:  753
+initial  value 2215.250411 
+iter  10 value 1525.362965
+iter  20 value 1500.787636
+iter  30 value 1358.351300
+iter  40 value 1193.606714
+iter  50 value 1009.420196
+iter  60 value 883.335979
+iter  70 value 791.756790
+iter  80 value 751.429356
+iter  90 value 729.020102
+iter 100 value 728.807849
+final  value 728.807849 
+stopped after 100 iterations
+# weights:  453
+initial  value 2012.682685 
+iter  10 value 1530.046674
+iter  20 value 1483.476892
+iter  30 value 1189.026757
+iter  40 value 911.164066
+iter  50 value 886.926311
+iter  60 value 884.225445
+iter  70 value 883.582910
+iter  80 value 872.841940
+iter  90 value 849.872122
+iter 100 value 771.910791
+final  value 771.910791 
+stopped after 100 iterations
+# weights:  303
+initial  value 2196.718501 
+iter  10 value 1531.720186
+iter  20 value 1531.457920
+iter  30 value 1520.209529
+iter  40 value 1483.131717
+iter  50 value 1425.064075
+iter  60 value 1289.115511
+iter  70 value 1044.703059
+iter  80 value 901.163681
+iter  90 value 888.326351
+iter 100 value 799.143382
+final  value 799.143382 
+stopped after 100 iterations
+# weights:  378
+initial  value 1987.607345 
+iter  10 value 1557.482503
+iter  20 value 1527.575548
+iter  30 value 1515.812549
+iter  40 value 1488.869687
+iter  50 value 1302.488128
+iter  60 value 968.204152
+iter  70 value 854.443330
+iter  80 value 807.717641
+iter  90 value 790.606009
+iter 100 value 756.272134
+final  value 756.272134 
+stopped after 100 iterations
+# weights:  303
+initial  value 1572.466302 
+iter  10 value 1528.959997
+iter  20 value 1520.656973
+iter  30 value 1481.535549
+iter  40 value 1368.101273
+iter  50 value 1288.221259
+iter  60 value 1274.740136
+iter  70 value 1265.867876
+iter  80 value 1263.413064
+iter  90 value 1257.103803
+iter 100 value 1220.783420
+iter 110 value 1065.238979
+iter 120 value 903.261140
+iter 130 value 823.777502
+iter 140 value 816.552038
+iter 150 value 812.087583
+iter 160 value 802.501605
+iter 170 value 786.329596
+iter 180 value 775.208276
+iter 190 value 747.698194
+iter 200 value 745.386464
+iter 210 value 743.375597
+iter 220 value 737.335690
+iter 230 value 730.409932
+iter 240 value 727.664038
+iter 250 value 727.130341
+iter 260 value 723.960779
+iter 270 value 715.401233
+iter 280 value 707.254854
+iter 290 value 704.887140
+iter 300 value 704.266920
+final  value 704.266920 
+stopped after 300 iterations
+[1] 0.86
+[1] 0.8666667
+[1] 0.8566667
+[1] 0.8633333
+[1] 0.845
+le package ‘randomForest’ a été décompressé et les sommes MD5 ont été vérifiées avec succés
+
+Les packages binaires téléchargés sont dans
+	C:\Users\dufeu\AppData\Local\Temp\RtmpiUcixX\downloaded_packages
+[1] 0.835
+[1] 0.7983333
+[1] 0.8433333
+[1] 0.8016667
+le package ‘kknn’ a été décompressé et les sommes MD5 ont été vérifiées avec succés
+
+Les packages binaires téléchargés sont dans
+	C:\Users\dufeu\AppData\Local\Temp\RtmpiUcixX\downloaded_packages
+[1] 0.7933333
+# weights:  753
+initial  value 1985.846714 
+iter  10 value 1529.037215
+iter  20 value 1518.014226
+iter  30 value 1436.602997
+iter  40 value 1279.034275
+iter  50 value 1003.702037
+iter  60 value 886.751783
+iter  70 value 759.744112
+iter  80 value 749.072378
+iter  90 value 748.429972
+iter 100 value 740.734850
+final  value 740.734850 
+stopped after 100 iterations
+# weights:  453
+initial  value 3442.306432 
+iter  10 value 1532.451411
+iter  20 value 1529.785233
+iter  30 value 1527.564038
+iter  40 value 1526.029942
+iter  50 value 1514.129622
+iter  60 value 1440.287334
+iter  70 value 1366.469793
+iter  80 value 1238.627416
+iter  90 value 1119.907786
+iter 100 value 1106.883359
+final  value 1106.883359 
+stopped after 100 iterations
+# weights:  303
+initial  value 1669.599136 
+iter  10 value 1531.252908
+iter  20 value 1523.524124
+iter  30 value 1483.410677
+iter  40 value 1280.313903
+iter  50 value 1034.359253
+iter  60 value 898.460436
+iter  70 value 890.526899
+iter  80 value 871.365584
+iter  90 value 828.902480
+iter 100 value 815.983799
+final  value 815.983799 
+stopped after 100 iterations
+# weights:  378
+initial  value 1536.404210 
+iter  10 value 1521.042580
+iter  20 value 1511.889887
+iter  30 value 1184.755153
+iter  40 value 999.685343
+iter  50 value 888.982347
+iter  60 value 883.915120
+iter  70 value 883.391571
+iter  80 value 880.623403
+iter  90 value 872.851882
+iter 100 value 867.517624
+final  value 867.517624 
+stopped after 100 iterations
+# weights:  303
+initial  value 1597.010986 
+iter  10 value 1524.371467
+iter  20 value 1482.938877
+iter  30 value 1339.810568
+iter  40 value 1017.712548
+iter  50 value 923.446967
+iter  60 value 878.506087
+iter  70 value 847.062545
+iter  80 value 802.440030
+iter  90 value 787.813110
+iter 100 value 765.299608
+iter 110 value 745.222039
+iter 120 value 728.122994
+iter 130 value 722.371544
+iter 140 value 721.799665
+iter 150 value 719.259907
+iter 160 value 711.215805
+iter 170 value 707.543930
+iter 180 value 705.526273
+iter 190 value 699.345798
+iter 200 value 691.645254
+iter 210 value 688.331664
+iter 220 value 684.905023
+iter 230 value 681.125094
+iter 240 value 679.066081
+iter 250 value 676.367131
+iter 260 value 674.507394
+iter 270 value 671.911644
+iter 280 value 669.104986
+iter 290 value 666.514238
+iter 300 value 664.640201
+final  value 664.640201 
+stopped after 300 iterations
+[1] 0.8633333
+[1] 0.6083333
+[1] 0.8216667
+[1] 0.7716667
+[1] 0.8333333
+[1] 130
+[1] 0
+[1] 100
+[1] 40
+[1] 0
+[1] 1958
+[1] 0
+[1] 1540
+[1] 1502
+[1] 0
+[1] 78107
+[1] 0
+[1] 61110
+[1] 60794
+[1] 0
+Error in install.packages : Updating loaded packages
+Error in install.packages : Updating loaded packages
+Error in install.packages : Updating loaded packages
+Warning in install.packages :
+  le package ‘rpart’ est en cours d'utilisation et ne sera pas installé
+Warning in install.packages :
+  le package ‘C50’ est en cours d'utilisation et ne sera pas installé
+Warning in install.packages :
+  le package ‘tree’ est en cours d'utilisation et ne sera pas installé
+[1] 0.865
+[1] 0.865
+[1] 0.8633333
+[1] 0.8633333
+[1] 0.8616667
+[1] 0.865
+[1] 0.865
+[1] 0.865
+[1] 0.8433333
+[1] 0.8083333
+[1] 0.845
+[1] 0.8033333
+[1] 0.835
+[1] 0.8283333
+[1] 0.82
+[1] 0.8333333
+[1] 0.8266667
+[1] 0.825
+[1] 0.825
+# weights:  753
+initial  value 2920.693181 
+iter  10 value 1524.690471
+iter  20 value 1492.881841
+iter  30 value 1380.870017
+iter  40 value 887.140727
+iter  50 value 764.339364
+iter  60 value 751.602700
+iter  70 value 750.093393
+iter  80 value 740.447391
+iter  90 value 734.251024
+iter 100 value 732.124472
+final  value 732.124472 
+stopped after 100 iterations
+# weights:  453
+initial  value 1928.602467 
+iter  10 value 1537.763725
+iter  20 value 1521.515816
+iter  30 value 1507.695802
+iter  40 value 1208.559726
+iter  50 value 1020.611023
+iter  60 value 887.349488
+iter  70 value 876.195454
+iter  80 value 875.056345
+iter  90 value 873.415005
+iter 100 value 846.403660
+final  value 846.403660 
+stopped after 100 iterations
+# weights:  303
+initial  value 1571.411987 
+iter  10 value 1524.010643
+iter  20 value 1480.776806
+iter  30 value 1253.832718
+iter  40 value 1114.969046
+iter  50 value 1094.737786
+iter  60 value 1078.805275
+iter  70 value 1011.896546
+iter  80 value 892.075712
+iter  90 value 882.535223
+iter 100 value 879.381540
+final  value 879.381540 
+stopped after 100 iterations
+# weights:  378
+initial  value 3030.118931 
+iter  10 value 1524.626860
+iter  20 value 1396.337104
+iter  30 value 1175.317164
+iter  40 value 890.117035
+iter  50 value 854.471227
+iter  60 value 836.500779
+iter  70 value 817.119315
+iter  80 value 804.164819
+iter  90 value 771.880502
+iter 100 value 746.988202
+final  value 746.988202 
+stopped after 100 iterations
+# weights:  303
+initial  value 1966.524543 
+iter  10 value 1522.267092
+iter  20 value 1495.863383
+iter  30 value 1382.559734
+iter  40 value 1216.432249
+iter  50 value 1139.244344
+iter  60 value 1024.224191
+iter  70 value 880.563527
+iter  80 value 780.065234
+iter  90 value 755.991193
+iter 100 value 752.425525
+iter 110 value 751.770882
+iter 120 value 750.798450
+iter 130 value 748.674428
+iter 140 value 735.377622
+iter 150 value 727.236118
+iter 160 value 712.549295
+iter 170 value 703.368325
+iter 180 value 703.193266
+iter 190 value 701.942043
+iter 200 value 700.353757
+iter 210 value 700.322561
+iter 220 value 700.137077
+iter 230 value 699.886001
+iter 240 value 697.161832
+iter 250 value 689.174918
+iter 260 value 686.042243
+iter 270 value 685.243767
+iter 280 value 684.979022
+iter 290 value 683.735106
+iter 300 value 679.820930
+final  value 679.820930 
+stopped after 300 iterations
+[1] 0.8566667
+[1] 0.8216667
+[1] 0.7333333
+[1] 0.8633333
+[1] 0.8466667
