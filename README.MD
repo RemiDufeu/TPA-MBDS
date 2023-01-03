@@ -29,4 +29,5 @@ Notre projet s'appuye sur la machine vagrant configuré par notre professeur [Se
 
 L'ensemble des données sont accessibles via l'intermédiaire de HIVE à l'aide de table externes.
 
+
 ![Architecture Gloable du projet](https://github.com/RemiDufeu/TPA-MBDS/blob/main/Architecture%20Globale.jpg?raw=true)
