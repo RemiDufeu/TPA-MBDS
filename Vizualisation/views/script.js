@@ -1,6 +1,6 @@
-document.addEventListener("DOMContentLoaded", mapPopulation);
+document.addEventListener("DOMContentLoaded", map);
 
-function mapPopulation() {
+function map() {
     const width = 700,
         height = 550;
 
@@ -32,12 +32,14 @@ function mapPopulation() {
     promises.push(d3.json("../data.json"));
 
     var marqueSelected = "Mercedes";
+    var modelSelected = "S500";
     var marqueDept = [];
+    var modelDept = [];
     Promise.all(promises).then(function (values) {
         const geojson = values[0];
         const csv = values[1];
         var nbrMarque = {};
-
+        var nbrModel = {};
         csv.forEach((e) => {
             delete e.id;
             delete e.couleur;
@@ -61,11 +63,31 @@ function mapPopulation() {
             }
             nbrMarque[element.immatriculation][element.marque]++;
         });
+        csv.forEach((element) => {
+            if (!nbrModel[element.immatriculation]) {
+                nbrModel[element.immatriculation] = {};
+            }
+            if (!nbrModel[element.immatriculation][element.nom]) {
+                nbrModel[element.immatriculation][element.nom] = 0;
+            }
+            nbrModel[element.immatriculation][element.nom]++;
+        });
         for (let i = 0; i < 100; i++) {
             if (nbrMarque[i]) {
                 var val = nbrMarque[i][marqueSelected];
                 if (val) {
                     marqueDept.push({
+                        imma: i,
+                        nbr: val,
+                    });
+                }
+            }
+        }
+        for (let i = 0; i < 100; i++) {
+            if (nbrModel[i]) {
+                var val = nbrModel[i][modelSelected];
+                if (val) {
+                    modelDept.push({
                         imma: i,
                         nbr: val,
                     });
@@ -161,6 +183,60 @@ function mapPopulation() {
                 .range([0, 9 * 20]);
             legendAxis.call(d3.axisRight(legendScale).ticks(6));
             marqueDept.forEach(function (e, i) {
+                d3.select("#d" + e.imma)
+                    .attr(
+                        "class",
+                        (d) => "department q" + quantile(+e.nbr) + "-9"
+                    )
+                    .on("mouseover", function (event, d) {
+                        div.transition().duration(200).style("opacity", 0.9);
+                        var data = geojson.features[e.imma].properties;
+                        div.html(
+                            "<b>Region : </b>" +
+                                data.NOM_REGION +
+                                "<br>" +
+                                "<b>Departement : </b>" +
+                                data.NOM_DEPT +
+                                "<br>" +
+                                "<b>Nombre de voitures : </b>" +
+                                e.nbr
+                        )
+                            .style("left", event.pageX + 30 + "px")
+                            .style("top", event.pageY - 30 + "px");
+                    })
+                    .on("mouseout", function (event, d) {
+                        div.style("opacity", 0);
+                        div.html("")
+                            .style("left", "-500px")
+                            .style("top", "-500px");
+                    });
+            });
+        });
+        d3.select("#modelData").on("change", function () {
+            modelDept = [];
+            for (let i = 0; i < 100; i++) {
+                if (nbrModel[i]) {
+                    var val = nbrModel[i][modelSelected];
+                    if (val) {
+                        modelDept.push({
+                            imma: i,
+                            nbr: val,
+                        });
+                    }
+                }
+            }
+            modelSelected = this.value;
+            quantile = d3
+                .scaleQuantile()
+                .domain([0, d3.max(modelDept, (e) => +e.nbr)])
+                .range(d3.range(9));
+
+            legendScale = d3
+                .scaleLinear()
+                .domain([0, d3.max(modelDept, (e) => +e.nbr)])
+                .range([0, 9 * 20]);
+            legendAxis.call(d3.axisRight(legendScale).ticks(6));
+            modelDept.forEach(function (e, i) {
                 d3.select("#d" + e.imma)
                     .attr(
                         "class",

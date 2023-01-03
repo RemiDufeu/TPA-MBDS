@@ -9,11 +9,22 @@
     </head>
     <body>
         <div id="chart"></div>
-        <label for="cars-select" id="carLabel">Choose a brand :</label>
+        <form id="formRadio">
+            <input
+                type="radio"
+                name="options"
+                value="brand"
+                id="brand"
+                checked
+            />
+            Marque
+            <input type="radio" name="options" value="model" id="model" />
+            Modele
+        </form>
+        <label for="cars-select" id="carLabel">Choisir une marque :</label>
         <select name="cars" id="carData">
-            <option value="">--Please choose an option--</option>
-            <option value="BMW">BMW</option>
             <option value="Mercedes">Mercedes</option>
+            <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
             <option value="Dacia">Dacia</option>
             <option value="Daihatsu">Daihatsu</option>
@@ -34,5 +45,75 @@
             <option value="Volkswagen">Volkswagen</option>
             <option value="Volvo">Volvo</option>
         </select>
+        <br />
+        <label for="models-select" id="modelLabel" style="display: none"
+            >Choisir un modele :</label
+        >
+        <select name="models" id="modelData" style="display: none">
+            <option value="S80 T6">S80 T6</option>
+            <option value="Touran 2.0 FSI">Touran 2.0 FSI</option>
+            <option value="Polo 1.2 6V">Polo 1.2 6V</option>
+            <option value="New  Beatle  1.8">New Beatle 1.8</option>
+            <option value="Golf  2.0  FSI">Golf 2.0 FSI</option>
+            <option value="Superb2.8 V6">Superb2.8 V6</option>
+            <option value="Toledo 1.6">Toledo 1.6</option>
+            <option value="9.3 1.8T">9.3 1.8T</option>
+            <option value="Vel Satis 3.5 V6">Vel Satis 3.5 V6</option>
+            <option value="Megane 2.0 16V">Megane 2.0 16V</option>
+            <option value="Laguna 2.0T">Laguna 2.0T</option>
+            <option value="Espace  2.0T">Espace 2.0T</option>
+            <option value="1007  1.4">1007 1.4</option>
+            <option value="Primera  1.6">Primera 1.6</option>
+            <option value="Maxima 3.0 V6">Maxima 3.0 V6</option>
+            <option value="Almera 1.8">Almera 1.8</option>
+            <option value="Copper 1.6 16V">Copper 1.6 16V</option>
+            <option value="S500" selected>S500</option>
+            <option value="A200">A200</option>
+            <option value="Ypsilon 1.4 16V">Ypsilon 1.4 16V</option>
+            <option value="Pi-canto  1.1">Pi-canto 1.1</option>
+            <option value="X-Type  2.5  V6">X-Type 2.5 V6</option>
+            <option value="Matrix  1.6">Matrix 1.6</option>
+            <option value="FR-V  1.7">FR-V 1.7</option>
+            <option value="Mondeo  1.8">Mondeo 1.8</option>
+            <option value="Croma  2.2">Croma 2.2</option>
+            <option value="Cuore 1.0">Cuore 1.0</option>
+            <option value="Logan 1.6 MPI">Logan 1.6 MPI</option>
+            <option value="M5">M5</option>
+            <option value="120i">120i</option>
+            <option value="A3 2.0 FSI">A3 2.0 FSI</option>
+            <option value="A2 1.4">A2 1.4</option>
+        </select>
     </body>
+    <script>
+        var radioGroup = document.getElementById("formRadio").options;
+        radioGroup[0].addEventListener("change", function () {
+            var selectedOption = this.value;
+            if (selectedOption === "brand") {
+                document.getElementById("carData").style.display = "block";
+                document.getElementById("carLabel").style.display = "block";
+                document.getElementById("modelData").style.display = "none";
+                document.getElementById("modelLabel").style.display = "none";
+            } else if (selectedOption === "model") {
+                document.getElementById("carData").style.display = "none";
+                document.getElementById("carLabel").style.display = "none";
+                document.getElementById("modelData").style.display = "block";
+                document.getElementById("modelLabel").style.display = "block";
+            }
+        });
+        radioGroup[1].addEventListener("change", function () {
+            console.log(this.value);
+            var selectedOption = this.value;
+            if (selectedOption === "brand") {
+                document.getElementById("carData").style.display = "block";
+                document.getElementById("carLabel").style.display = "block";
+                document.getElementById("modelData").style.display = "none";
+                document.getElementById("modelLabel").style.display = "none";
+            } else if (selectedOption === "model") {
+                document.getElementById("carData").style.display = "none";
+                document.getElementById("carLabel").style.display = "none";
+                document.getElementById("modelData").style.display = "block";
+                document.getElementById("modelLabel").style.display = "block";
+            }
+        });
+    </script>
 </html>
